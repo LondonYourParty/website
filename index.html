@@ -88,6 +88,7 @@
                 white-space: nowrap;
                 flex: 1 1 0;
                 text-align: center;
+                text-decoration: none;
             }
             .nav-row {
                 display: flex;
@@ -133,6 +134,18 @@
                 margin-bottom: 5vh;
             }
 
+            .doc-update-text {
+                font-size: 0.33em; 
+                text-align: center;
+                opacity: 50%;
+                font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;    
+                margin-top: 0.33em;
+                margin-bottom: -1.75em;
+            }
+            .button-text {
+                text-decoration: underline;
+            }
+
             @media (max-width: 1070px) {
                .red-triangle-one {
                     border-width: 53vw 53vw 0 0;
@@ -173,6 +186,16 @@
                     margin-top: 1vh;                    
                     margin-bottom: 2.5vh;
                 }
+                .doc-update-text {
+                    font-size: 0.4em; 
+                    text-align: center;
+                    opacity: 50%;
+                    margin-top: 0.1em;
+                    margin-bottom: -1.25em;
+                }
+                .last-updated-text {
+                    display: none;
+                }
             }
         </style>
     </head>
@@ -195,17 +218,46 @@
             </section>        
             <nav id="body-item-3" class="vertical-align-children">
                 <div class="nav-row">
-                    <a class="nav-button vertical-align-children" href="alda/call">CALL FOR DELEGATES</a>
-                    <a class="nav-button vertical-align-children" href="alda/timetable">TIMETABLE UPDATE</a>
-                    <a class="nav-button vertical-align-children" href="alda/explainer">EXPLAINER SLIDES</a>
-                    <a class="nav-button vertical-align-children" href="whoweare">WHO WE ARE</a>    
-                    <a class="nav-button vertical-align-children" href="alda/hustings">CEC HUSTINGS</a>                                                                    
-                    <a class="nav-button vertical-align-children" href="alda/rules">RULES & PROCEDURES</a>
+                    <a class="nav-button vertical-align-children" href="alda/call">
+                        <span class="button-text">CALL FOR DELEGATES</span>
+                        <span class="doc-update-text">
+                            <span class="last-updated-text">Last updated: </span>
+                            <span>12 Jan 2026</span>
+                    </a>                        
+                    <a class="nav-button vertical-align-children" href="alda/timetable">
+                        <span class="button-text">TIMETABLE UPDATE</span>
+                        <span class="doc-update-text">
+                            <span class="last-updated-text">Last updated: </span>
+                            <span>13 Jan 2026</span>          
+                    </a>
+                    <a class="nav-button vertical-align-children" href="alda/explainer">
+                        <span class="button-text">EXPLAINER SLIDES</span>
+                        <span class="doc-update-text">
+                            <span class="last-updated-text">Last updated: </span>
+                            <span>13 Jan 2026</span>
+                    </a>
+                    <a class="nav-button vertical-align-children" href="whoweare">
+                        <span class="button-text">WHO WE ARE</span>
+                        <span class="doc-update-text">
+                            <span class="last-updated-text">Last updated: </span>
+                            <span>13 Dec 2025</span>
+                    </a>    
+                    <a class="nav-button vertical-align-children" href="alda/hustings">
+                        <span class="button-text">CEC HUSTINGS</span>
+                        <span class="doc-update-text">
+                            <span class="last-updated-text">Last updated: </span>
+                            <span>13 Jan 2026</span>
+                    </a>                                                                    
+                    <a class="nav-button vertical-align-children" href="alda/rules">
+                        <span class="button-text">RULES & PROCEDURES</span>
+                        <span class="doc-update-text">
+                            <span class="last-updated-text">Last updated: </span>
+                            <span>12 Jan 2026</span>
+                    </a>
                 </div>           
             </nav>                   
             <footer id="body-item-4" class="vertical-align-children">
                 <p class="vertical-align-children" style="text-align: center;">
-                    <b>EMAIL:</b> 
                     <a href="mailto:yplondondelegateassembly@gmail.com">yplondondelegateassembly@gmail.com</a>
                 </p>
             </footer> 
