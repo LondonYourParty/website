@@ -13,16 +13,16 @@
         <link rel="dns-prefetch" href="//londonyp.org">
         <meta property="og:site_name" content="London Your Party">
         
-        <title>London Your Party</title>
-        <meta property="og:title" content="London Your Party">
-        <meta name="twitter:title" content="London Your Party">
+        <title>All-London Delegate Assembly</title>
+        <meta property="og:title" content="All-London Delegate Assembly">
+        <meta name="twitter:title" content="All-London Delegate Assembly">
         
         <meta property="article:publisher" content="London Your Party">
         <meta property="article:modified_time" content="2026-01-09T20:00:00+00:00">
 
-        <meta name="description" content="London Your Party is a group of branches and affiliate local groups committed to bottom-up democracy in Your Party. We organise horizontally through a delegate structure, aiming to link London branches together to exchange experiences, help each other with Your Party branch building and defend branch autonomy and democracy within Your Party.">
-        <meta property="og:description" content="London Your Party is a group of branches and affiliate local groups committed to bottom-up democracy in Your Party. We organise horizontally through a delegate structure, aiming to link London branches together to exchange experiences, help each other with Your Party branch building and defend branch autonomy and democracy within Your Party.">
-        <meta name="twitter:description" content="London Your Party is a group of branches and affiliate local groups committed to bottom-up democracy in Your Party. We organise horizontally through a delegate structure, aiming to link London branches together to exchange experiences, help each other with Your Party branch building and defend branch autonomy and democracy within Your Party.">
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:description" content="">
         
         <meta property="og:image" content="https://londonyp.org/assets/lyp.png">
         <meta property="og:image:width" content="1200">
@@ -66,13 +66,20 @@
             h1 {
                 font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
                 font-weight: 200;
-                font-size: 10vw;
+                font-size: 7.5vw;
                 letter-spacing: 0px;
                 line-height: 1em;        
             }
             h2 {
                 font-weight: 200;
-                font-size: 2.5vw;
+                font-size: 1.5vw;                
+            }
+            h3 {
+                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
+                font-weight: 200;
+                font-size: 4vh;
+                letter-spacing: 0px;
+                line-height: 1em;        
             }
             p {
                 font-size: 2em;
@@ -81,17 +88,18 @@
                 font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 background: #042830;
                 color: #FAF6E8;
-                padding: 1em;
-                margin: 0 0.5em;
-                font-size: 2em;
-                width: 5em;
-                white-space: nowrap;
-                flex: 1 1 0;
+                padding: 0.5em;
+                margin: 0.25em;
+                font-size: 2.5vh;
+                width: 12vw;
+                white-space: nowrap;                
                 text-align: center;
             }
+
             .nav-button-disabled {
                 opacity: 50%;
             }
+
             .nav-row {
                 display: flex;
                 flex-direction: row;
@@ -100,6 +108,25 @@
                 height: 100%;
                 flex-wrap: wrap;
             }
+
+            .nav-card-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: nowrap;
+                height:35vh;
+            }
+
+            .nav-card {
+                flex: 1 1 0; 
+                margin: 0 1.5em; 
+                text-align: center; 
+                width: auto; 
+                background: #FFFFFF; 
+                height:100%;
+            }
+
             .red-triangle-one {
                 position: absolute;
                 width: 0px; 
@@ -113,6 +140,18 @@
                 z-index: -999999        
             }
 
+            .red-triangle-two {
+                position: relative;
+                width: 0px; 
+                height: 0px;
+                top: 0;
+                left: 0;
+                border-style: solid;
+                border-width: 3vh 3vh 0 0;
+                border-color: #FF3131 transparent transparent transparent;
+                transform: rotate(0deg);                                
+            }
+
             .vertical-align-children {
                 display: flex; 
                 flex-direction: column;
@@ -120,20 +159,25 @@
             }
 
             #body-item-1 {
-                margin-top: 10vh;
-                margin-bottom: 2.5vh;
+                margin-top: 9vh;
+                height: 25vh;
+                margin-bottom: 2vh;
             }
             #body-item-2 {
-                margin-top: 2.5vh;
-                margin-bottom: 2.5vh;
+                margin-top: 3vh;
+                height: 30vh;
+                margin-bottom: 1vh;
             }
             #body-item-3 {
-                margin-top: 2.5vh;
-                margin-bottom: 2.5vh;
+                margin-top: 5vh;
+                height: 100%;
+                width: 100%;
+                margin-bottom: 5vh;
             }
             #body-item-4 {
-                margin-top: 2.5vh;
-                margin-bottom: 5vh;
+                margin-top: 2vh;
+                height: 1vh;
+                margin-bottom: 4vh;
             }
 
             @media (max-width: 1070px) {
@@ -183,29 +227,72 @@
         <div class="red-triangle-one"></div>
         <main>
             <header id="body-item-1" class="vertical-align-children">
-                <h1 style="text-align: center;">
-                    LONDON YOUR PARTY
-                </h1>                
+                    <h1 style="text-align: center;">
+                        <a href='https://londonyp.org/' style="color: inherit;  text-decoration: inherit;">
+                        LONDON YOUR PARTY
+                        </a>
+                    </h1>                
             </header>
             <section id="body-item-2" class="vertical-align-children">
                 <h2 style="text-align: center;">
                     ALL-LONDON DELEGATE ASSEMBLY
                     <br/>
-                    SUN 8 FEB 2026 — 09:30 TO 17:30
+                    SUN 8 FEB 2026
                     <br/>
                     VENUE & TICKETS TBA
                 </h2>
             </section>        
             <nav id="body-item-3" class="vertical-align-children">
-                <div class="nav-row">
-                    <a class="nav-button vertical-align-children" href="whoweare">WHO WE ARE</a>
-                    <a class="nav-button vertical-align-children" href="alda">ASSEMBLY</a>
-                    <div class="nav-button vertical-align-children nav-button-disabled" href="groups">GROUPS (TBA)</div>                    
-                </div>
+                <div class="nav-row" style="margin: 0 1.5em;">
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">HISTORY</h3> 
+                            <div class="nav-button nav-button-disabled">INITIAL (TBD)</div>
+                            <a href="alda/om1/minutes" class="nav-button">MEETING #1</a>
+                            <a href="alda/om2/minutes" class="nav-button">MEETING #2</a>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">COMMUNICATIONS</h3> 
+                            <a href="alda/call" class="nav-button">CALL FOR DELEGATES</a>
+                            <a href="alda/timetable" class="nav-button">TIMETABLE</a>
+                            <div class="nav-button nav-button-disabled">VENUE (TBA)</div>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">PREPARATIONS</h3> 
+                            <a href="alda/explainer" class="nav-button">EXPLAINER SLIDES</a>
+                            <a href="alda/rules" class="nav-button">RULES & PROCEDURES</a>
+                            <div class="nav-button nav-button-disabled">FORMS (TBA)</div>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">WHAT TO EXPECT</h3> 
+                            <a href="alda/hustings" class="nav-button">CEC HUSTINGS</a>
+                            <div class="nav-button nav-button-disabled">SPEAKERS (TBA)</div>
+                            <div class="nav-button nav-button-disabled">AGENDA (TBA)</div>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">ATTENDING</h3> 
+                            <div class="nav-button nav-button-disabled">SEATED OBSERVERS (TBA)</div>
+                            <div class="nav-button nav-button-disabled">ONLINE OBSERVERS (TBA)</div>
+                            <div class="nav-button nav-button-disabled">FREE LIVESTREAM (TBA)</div>
+                        </div>                        
+                    </div>
+                </div>           
             </nav>                   
             <footer id="body-item-4" class="vertical-align-children">
-                <p class="vertical-align-children" style="text-align: center;">
-                    <b>EMAIL:</b> 
+                <p style="text-align: center; font-size: 1em;">
                     <a href="mailto:yplondondelegateassembly@gmail.com">yplondondelegateassembly@gmail.com</a>
                 </p>
             </footer> 
