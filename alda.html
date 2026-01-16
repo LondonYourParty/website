@@ -20,9 +20,9 @@
         <meta property="article:publisher" content="London Your Party">
         <meta property="article:modified_time" content="2026-01-09T20:00:00+00:00">
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
-        <meta name="twitter:description" content="">
+        <meta name="description" content="The purpose of the Assembly is to bring Your Party London groups together to discuss how we strengthen our collective work, improve coordination, and agree priorities for the coming period.">
+        <meta property="og:description" content="The purpose of the Assembly is to bring Your Party London groups together to discuss how we strengthen our collective work, improve coordination, and agree priorities for the coming period.">
+        <meta name="twitter:description" content="The purpose of the Assembly is to bring Your Party London groups together to discuss how we strengthen our collective work, improve coordination, and agree priorities for the coming period.">
         
         <meta property="og:image" content="https://londonyp.org/assets/lyp.png">
         <meta property="og:image:width" content="1200">
@@ -87,13 +87,17 @@
             .nav-button {
                 font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 background: #042830;
-                color: #FAF6E8;
+                color: #FFF;
                 padding: 0.5em;
                 margin: 0.25em;
                 font-size: 2.5vh;
-                width: 12vw;
+                width: 80%;
                 white-space: nowrap;                
                 text-align: center;
+                min-width: 10em;
+                max-width: 10em;
+                margin: 0 1em;
+                text-decoration: none;
             }
 
             .nav-button-disabled {
@@ -103,7 +107,7 @@
             .nav-row {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 height: 100%;
                 flex-wrap: wrap;
@@ -114,17 +118,16 @@
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
-                flex-wrap: nowrap;
-                height:35vh;
+                height: 36vh;
+                margin-top: -3vh;
             }
 
             .nav-card {
-                flex: 1 1 0; 
-                margin: 0 1.5em; 
+                flex: 0 1; 
+                margin: 2vh 1.5em; 
                 text-align: center; 
                 width: auto; 
                 background: #FFFFFF; 
-                height:100%;
             }
 
             .red-triangle-one {
@@ -134,7 +137,7 @@
                 top: 0;
                 left: 0;
                 border-style: solid;
-                border-width: 500px 500px 0 0;
+                border-width: 400px 400px 0 0;
                 border-color: #FF3131 transparent transparent transparent;
                 transform: rotate(0deg);        
                 z-index: -999999        
@@ -161,32 +164,36 @@
             #body-item-1 {
                 margin-top: 9vh;
                 height: 25vh;
-                margin-bottom: 2vh;
+                margin-bottom: 0vh;
             }
             #body-item-2 {
                 margin-top: 3vh;
                 height: 30vh;
-                margin-bottom: 1vh;
+                margin-bottom: 0vh;
             }
             #body-item-3 {
-                margin-top: 5vh;
+                margin-top: 3vh;
                 height: 100%;
                 width: 100%;
                 margin-bottom: 5vh;
             }
             #body-item-4 {
-                margin-top: 2vh;
+                margin-top: 0;
                 height: 1vh;
-                margin-bottom: 4vh;
+                margin-bottom: 0;
+                padding-bottom: 8vh;
             }
-            
-            .doc-update-text {
+
+            .button-subtext {
                 font-size: 0.33em; 
                 text-align: center;
                 opacity: 50%;
                 font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;    
                 margin-top: 0.33em;
-                margin-bottom: -1.75em;
+                margin-bottom: -0.33em;
+            }
+            .no-button-subtext-padding {
+                font-size: 0.165em;
             }
             .button-text {
                 text-decoration: underline;
@@ -194,8 +201,17 @@
             .disabled {
                 opacity: 50%;
             }
+            
+            @media (min-width: 1071px) {
+                .hidden-on-desktop {
+                    display: none;
+                }
+            }
 
             @media (max-width: 1070px) {
+                .hidden-on-mobile {
+                    display: none;
+                }
                .red-triangle-one {
                     border-width: 53vw 53vw 0 0;
                 }
@@ -211,40 +227,50 @@
                     font-size: 1em;
                 }   
                 .nav-button {
-                    padding: 0.75em;
+                    padding: 0.5em;
                     font-size: 1.25em;
                     height: fit-content;
                 }
                 .nav-row {
                     flex-direction: column;
                     justify-content: space-evenly;
+                    flex-wrap: nowrap;
+                }
+                .nav-card-container {
+                    height: 20em;
                 }
                 #body-item-1 {
-                    margin-top: 2.5vh;                    
+                    margin-top: 2.5vh;   
+                    height: auto;                 
                     margin-bottom: 1vh;
                 }
                 #body-item-2 {
-                    margin-top: 1vh;                    
+                    margin-top: 1vh;    
+                    height: auto;                
                     margin-bottom: 1vh;
                 }
                 #body-item-3 {
-                    margin-top: 1vh;                    
+                    margin-top: 1vh;   
+                    height: auto;                 
                     margin-bottom: 1vh;
                 }
                 #body-item-4 {
-                    margin-top: 1vh;                    
-                    margin-bottom: 2.5vh;
+                    margin-top: 1vh;   
+                    height: auto;        
+                    padding-bottom: 4vh;         
                 }                
-                .doc-update-text {
+                .button-subtext {
                     font-size: 0.4em; 
-                    text-align: center;
-                    opacity: 50%;
-                    margin-top: 0.1em;
-                    margin-bottom: -1.25em;
+                    margin-top: 0.2em;
+                    margin-bottom: -0.2em;
                 }
-                .last-updated-text {
-                    display: none;
+                .no-button-subtext-padding {
+                    font-size: 0.2em;
                 }
+                .nav-card {
+                    min-width: 20em;
+                    max-width: 20em;
+                }                
             }
         </style>
     </head>
@@ -252,18 +278,22 @@
         <div class="red-triangle-one"></div>
         <main>
             <header id="body-item-1" class="vertical-align-children">
-                    <h1 style="text-align: center;">
-                        <a href='https://londonyp.org/' style="color: inherit;  text-decoration: inherit;">
-                        LONDON YOUR PARTY
-                        </a>
-                    </h1>                
-            </header>
-            <section id="body-item-2" class="vertical-align-children">
-                <h2 style="text-align: center;">
+                <h1 style="text-align: center;">
                     ALL-LONDON DELEGATE ASSEMBLY
-                    <br/>
-                    SUN 8 FEB 2026 — 09:30-17:30
+                </h1>                
+            </header>
+            <section id="body-item-2" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+                <h2 style="text-align: center; margin-bottom: 3vh;">
+                    <span class="hidden-on-mobile">SUN 8 FEB 2026 — 09:30-17:30</span>
+                    <span class="hidden-on-desktop">SUN 8 FEB 2026<br/>09:30-17:30<br/>VENUE TBA</span>
                 </h2>
+                <a class="nav-button vertical-align-children" href="alda/explainer" target="_blank" rel="noopener noreferrer">
+                    <span class="button-text">EXPLAINER SLIDES</span>
+                    <span class="button-subtext">
+                        <span>Last updated: </span>
+                        <span>13 Jan 2026</span>
+                    </span>
+                </a>
             </section>        
             <nav id="body-item-3" class="vertical-align-children">
                 <div class="nav-row" style="margin: 0 1.5em;">
@@ -271,53 +301,135 @@
                         <div class="red-triangle-two"></div>
                         <div class="nav-card-container">
                             <h3 style="color: #FF3131;">HISTORY</h3> 
-                            <div class="nav-button nav-button-disabled">INITIAL (TBD)</div>
-                            <a href="alda/om1/minutes" class="nav-button">MEETING #1</a>
-                            <a href="alda/om2/minutes" class="nav-button">MEETING #2</a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>INITIAL (TBD)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                            <a class="nav-button vertical-align-children" href="alda/om1/minutes" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">MEETING #1</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>22 Nov 2025</span>
+                                </span>
+                            </a>    
+                            <a class="nav-button vertical-align-children" href="alda/om2/minutes" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">MEETING #2</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>13 Dec 2025</span>
+                                </span>
+                            </a> 
                         </div>                        
                     </div>
                     <div class="nav-card">
                         <div class="red-triangle-two"></div>
                         <div class="nav-card-container">
                             <h3 style="color: #FF3131;">COMMUNICATIONS</h3> 
-                            <a href="alda/call" class="nav-button">CALL FOR DELEGATES</a>
-                            <a href="alda/timetable" class="nav-button">TIMETABLE</a>
-                            <div class="nav-button nav-button-disabled">VENUE (TBA)</div>
+                            <a class="nav-button vertical-align-children" href="alda/call" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">CALL FOR DELEGATES</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>12 Jan 2026</span>
+                                </span>
+                            </a>
+                            <a class="nav-button vertical-align-children" href="alda/timetable" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">TIMETABLE UPDATE</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>13 Jan 2026</span>
+                                </span>
+                            </a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>VENUE (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
                         </div>                        
                     </div>
                     <div class="nav-card">
                         <div class="red-triangle-two"></div>
                         <div class="nav-card-container">
-                            <h3 style="color: #FF3131;">PREPARATIONS</h3> 
-                            <a href="alda/explainer" class="nav-button">EXPLAINER SLIDES</a>
-                            <a href="alda/rules" class="nav-button">RULES & PROCEDURES</a>
-                            <div class="nav-button nav-button-disabled">FORMS (TBA)</div>
+                            <h3 style="color: #FF3131;">PROCESS</h3> 
+                            <a class="nav-button vertical-align-children" href="alda/rules" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">RULES & PROCEDURES</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>15 Jan 2026</span>
+                                </span>
+                            </a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>REPORT DELEGATES (TBA)</span>
+                                <span class="button-subtext">
+                                    <span>Deadline: </span>
+                                    <span>30 Jan 2026 (Midnight)</span>
+                                </span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>SUBMIT BUSINESS (TBA)</span>
+                                <span class="button-subtext">
+                                    <span>Deadline: </span>
+                                    <span>30 Jan 2026 (Midnight)</span>
+                                </span>
+                            </div>
                         </div>                        
                     </div>
                     <div class="nav-card">
                         <div class="red-triangle-two"></div>
                         <div class="nav-card-container">
                             <h3 style="color: #FF3131;">WHAT TO EXPECT</h3> 
-                            <a href="alda/hustings" class="nav-button">CEC HUSTINGS</a>
-                            <div class="nav-button nav-button-disabled">SPEAKERS (TBA)</div>
-                            <div class="nav-button nav-button-disabled">AGENDA (TBA)</div>
+                            <a class="nav-button vertical-align-children" href="alda/hustings" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">CEC HUSTINGS</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>13 Jan 2026</span>
+                                </span>
+                            </a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>SPEAKERS (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>AGENDA (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
                         </div>                        
                     </div>
                     <div class="nav-card">
                         <div class="red-triangle-two"></div>
                         <div class="nav-card-container">
                             <h3 style="color: #FF3131;">ATTENDING</h3> 
-                            <div class="nav-button nav-button-disabled">SEATED OBSERVERS (TBA)</div>
-                            <div class="nav-button nav-button-disabled">ONLINE OBSERVERS (TBA)</div>
-                            <div class="nav-button nav-button-disabled">FREE LIVESTREAM (TBA)</div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>SEATED OBSERVERS</span>
+                                <span class="button-subtext">
+                                    <span>Available from: </span>
+                                    <span>1 Feb 2026 (Noon)</span>
+                                </span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>ONLINE OBSERVERS</span>
+                                <span class="button-subtext">
+                                    <span>Available from: </span>
+                                    <span>1 Feb 2026 (Noon)</span>
+                                </span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>FREE LIVESTREAM (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
                         </div>                        
                     </div>
                 </div>           
             </nav>                   
-            <footer id="body-item-4" class="vertical-align-children">
-                <p style="text-align: center; font-size: 1em;">
-                    <a href="mailto:yplondondelegateassembly@gmail.com">yplondondelegateassembly@gmail.com</a>
-                </p>
+            <footer id="body-item-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <a class="nav-button vertical-align-children" href="https://londonyp.org/" rel="noopener noreferrer">
+                    <span class="no-button-subtext-padding">&nbsp;</span>
+                    <span class="button-text">BACK</span>
+                    <span class="no-button-subtext-padding">&nbsp;</span>
+                </a>
             </footer> 
         </main>
     </body>
