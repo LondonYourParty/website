@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:type" content="website">
+
+        <meta charset="utf-8">
+        <meta property="og:locale" content="en_GB">
+        
+        <link rel="canonical" href="https://londonyp.org/">
+        <meta property="og:url" content="https://londonyp.org/">
+
+        <link rel="dns-prefetch" href="//londonyp.org">
+        <meta property="og:site_name" content="London Your Party">
+        
+        <title>All-London Delegate Assembly</title>
+        <meta property="og:title" content="All-London Delegate Assembly">
+        <meta name="twitter:title" content="All-London Delegate Assembly">
+        
+        <meta property="article:publisher" content="London Your Party">
+        <meta property="article:modified_time" content="2026-01-09T20:00:00+00:00">
+
+        <meta name="description" content="The purpose of the Assembly is to bring Your Party London groups together to discuss how we strengthen our collective work, improve coordination, and agree priorities for the coming period.">
+        <meta property="og:description" content="The purpose of the Assembly is to bring Your Party London groups together to discuss how we strengthen our collective work, improve coordination, and agree priorities for the coming period.">
+        <meta name="twitter:description" content="The purpose of the Assembly is to bring Your Party London groups together to discuss how we strengthen our collective work, improve coordination, and agree priorities for the coming period.">
+        
+        <meta property="og:image" content="https://londonyp.org/assets/lyp.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="627">
+        <meta property="og:image:type" content="image/png">
+
+        <link rel="icon" href="assets/Chevron.png" type="image/png" sizes="32x32">
+        <link rel="icon" href="assets/Chevron.png" type="image/png" sizes="192x192">
+        <link rel="apple-touch-icon" href="assets/Chevron.png">
+        <meta rel="msapplication-TileImage" href="assets/Chevron.png">
+        
+        <style>
+            @font-face { font-family: OpenSauceSans; src: url('assets/OpenSauceSans-Regular.ttf'); } 
+            @font-face { font-family: Anton; src: url('assets/Anton-Regular.ttf') }
+            * {
+                margin: 0;
+            }
+            html {
+                height: 100%;
+            }
+            body {
+                color: #042830;
+                background-color:#FAF6E8;                
+                
+                font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;               
+                line-height: 1.6;
+                font-size: 100%; 
+                word-wrap: break-word;
+                
+                height: 100%;
+                margin: 0; 
+                padding: 0;               
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+            }
+            h1 {
+                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
+                font-weight: 200;
+                font-size: 7.5vw;
+                letter-spacing: 0px;
+                line-height: 1em;        
+            }
+            h2 {
+                font-weight: 200;
+                font-size: 1.5vw;                
+            }
+            h3 {
+                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
+                font-weight: 200;
+                font-size: 4vh;
+                letter-spacing: 0px;
+                line-height: 1em;        
+            }
+            p {
+                font-size: 2em;
+            }
+            .nav-button {
+                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background: #042830;
+                color: #FFF;
+                padding: 0.5em;
+                margin: 0.25em;
+                font-size: 2.5vh;
+                width: 80%;
+                white-space: nowrap;                
+                text-align: center;
+                min-width: 10em;
+                max-width: 10em;
+                margin: 0 1em;
+                text-decoration: none;
+            }
+
+            .nav-button-disabled {
+                opacity: 50%;
+            }
+
+            .nav-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                flex-wrap: wrap;
+            }
+
+            .nav-card-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 36vh;
+                margin-top: -3vh;
+            }
+
+            .nav-card {
+                flex: 0 1; 
+                margin: 2vh 1.5em; 
+                text-align: center; 
+                width: auto; 
+                background: #FFFFFF; 
+            }
+
+            .red-triangle-one {
+                position: absolute;
+                width: 0px; 
+                height: 0px;
+                top: 0;
+                left: 0;
+                border-style: solid;
+                border-width: 200px 200px 0 0;
+                border-color: #FF3131 transparent transparent transparent;
+                transform: rotate(0deg);        
+                z-index: -999999        
+            }
+
+            .red-triangle-two {
+                position: relative;
+                width: 0px; 
+                height: 0px;
+                top: 0;
+                left: 0;
+                border-style: solid;
+                border-width: 3vh 3vh 0 0;
+                border-color: #FF3131 transparent transparent transparent;
+                transform: rotate(0deg);                                
+            }
+
+            .vertical-align-children {
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #body-item-1 {
+                margin-top: 9vh;
+                height: 25vh;
+                margin-bottom: 0vh;
+            }
+            #body-item-2 {
+                margin-top: 3vh;
+                height: 30vh;
+                margin-bottom: 0vh;
+            }
+            #body-item-3 {
+                margin-top: 3vh;
+                height: 100%;
+                width: 100%;
+                margin-bottom: 5vh;
+            }
+            #body-item-4 {
+                margin-top: 0;
+                height: 1vh;
+                margin-bottom: 0;
+                padding-bottom: 8vh;
+            }
+
+            .button-subtext {
+                font-size: 0.33em; 
+                text-align: center;
+                opacity: 50%;
+                font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;    
+                margin-top: 0.33em;
+                margin-bottom: -0.33em;
+            }
+            .no-button-subtext-padding {
+                font-size: 0.165em;
+            }
+            .button-text {
+                text-decoration: underline;
+            }
+            .disabled {
+                opacity: 50%;
+            }
+            
+            @media (min-width: 1071px) {
+                .hidden-on-desktop {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 1070px) {
+                .hidden-on-mobile {
+                    display: none;
+                }
+               .red-triangle-one {
+                    border-width: 25vw 25vw 0 0;
+                }
+                h1 {
+                    font-size: 3.5em;
+                    line-height: 1em;                                 
+                }
+                h2 {
+                    font-size: 1.25em;
+                    line-height: 1.5em;                                 
+                }
+                p {
+                    font-size: 1em;
+                }   
+                .nav-button {
+                    padding: 0.5em;
+                    font-size: 1.25em;
+                    height: fit-content;
+                }
+                .nav-row {
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    flex-wrap: nowrap;
+                }
+                .nav-card-container {
+                    height: 20em;
+                }
+                #body-item-1 {
+                    margin-top: 7.5vh;   
+                    height: auto;                 
+                    margin-bottom: 1vh;
+                }
+                #body-item-2 {
+                    margin-top: 1vh;    
+                    height: auto;                
+                    margin-bottom: 1vh;
+                }
+                #body-item-3 {
+                    margin-top: 1vh;   
+                    height: auto;                 
+                    margin-bottom: 1vh;
+                }
+                #body-item-4 {
+                    margin-top: 1vh;   
+                    height: auto;        
+                    padding-bottom: 4vh;         
+                }                
+                .button-subtext {
+                    font-size: 0.4em; 
+                    margin-top: 0.2em;
+                    margin-bottom: -0.2em;
+                }
+                .no-button-subtext-padding {
+                    font-size: 0.2em;
+                }
+                .nav-card {
+                    min-width: 20em;
+                    max-width: 20em;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="red-triangle-one"></div>
+        <main>
+            <header id="body-item-1" class="vertical-align-children">
+                <h1 style="text-align: center;">
+                    ALL-LONDON DELEGATE ASSEMBLY
+                </h1>                
+            </header>
+            <section id="body-item-2" style="display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+                <h2 style="text-align: center; margin-bottom: 3vh;">
+                    <span class="hidden-on-mobile">SUN 8 FEB 2026 — 09:30-17:30</span>
+                    <span class="hidden-on-desktop">SUN 8 FEB 2026<br/>09:30-17:30<br/>VENUE TBA</span>
+                </h2>
+                <a class="nav-button vertical-align-children" href="alda/explainer" target="_blank" rel="noopener noreferrer">
+                    <span class="button-text">EXPLAINER SLIDES</span>
+                    <span class="button-subtext">
+                        <span>Last updated: </span>
+                        <span>13 Jan 2026</span>
+                    </span>
+                </a>
+            </section>        
+            <nav id="body-item-3" class="vertical-align-children">
+                <div class="nav-row" style="margin: 0 1.5em;">
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">HISTORY</h3> 
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>INITIAL (TBD)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                            <a class="nav-button vertical-align-children" href="alda/om1/minutes" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">MEETING #1</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>22 Nov 2025</span>
+                                </span>
+                            </a>    
+                            <a class="nav-button vertical-align-children" href="alda/om2/minutes" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">MEETING #2</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>13 Dec 2025</span>
+                                </span>
+                            </a> 
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">COMMUNICATIONS</h3> 
+                            <a class="nav-button vertical-align-children" href="alda/call" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">CALL FOR DELEGATES</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>12 Jan 2026</span>
+                                </span>
+                            </a>
+                            <a class="nav-button vertical-align-children" href="alda/timetable" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">TIMETABLE UPDATE</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>13 Jan 2026</span>
+                                </span>
+                            </a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>VENUE (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">PROCESS</h3> 
+                            <a class="nav-button vertical-align-children" href="alda/rules" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">RULES & PROCEDURES</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>15 Jan 2026</span>
+                                </span>
+                            </a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>REPORT DELEGATES (TBA)</span>
+                                <span class="button-subtext">
+                                    <span>Deadline: </span>
+                                    <span>30 Jan 2026 (Midnight)</span>
+                                </span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>SUBMIT BUSINESS (TBA)</span>
+                                <span class="button-subtext">
+                                    <span>Deadline: </span>
+                                    <span>30 Jan 2026 (Midnight)</span>
+                                </span>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">WHAT TO EXPECT</h3> 
+                            <a class="nav-button vertical-align-children" href="alda/hustings" target="_blank" rel="noopener noreferrer">
+                                <span class="button-text">CEC HUSTINGS</span>
+                                <span class="button-subtext">
+                                    <span>Last updated: </span>
+                                    <span>13 Jan 2026</span>
+                                </span>
+                            </a>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>SPEAKERS (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>AGENDA (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="nav-card">
+                        <div class="red-triangle-two"></div>
+                        <div class="nav-card-container">
+                            <h3 style="color: #FF3131;">ATTENDING</h3> 
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>SEATED OBSERVERS</span>
+                                <span class="button-subtext">
+                                    <span>Available from: </span>
+                                    <span>1 Feb 2026 (Noon)</span>
+                                </span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span>ONLINE OBSERVERS</span>
+                                <span class="button-subtext">
+                                    <span>Available from: </span>
+                                    <span>1 Feb 2026 (Noon)</span>
+                                </span>
+                            </div>
+                            <div class="nav-button nav-button-disabled vertical-align-children">
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                                <span>FREE LIVESTREAM (TBA)</span>
+                                <span class="no-button-subtext-padding">&nbsp;</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>           
+            </nav>                   
+            <footer id="body-item-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <a class="nav-button vertical-align-children" href="https://londonyp.org/" rel="noopener noreferrer">
+                    <span class="no-button-subtext-padding">&nbsp;</span>
+                    <span class="button-text">BACK</span>
+                    <span class="no-button-subtext-padding">&nbsp;</span>
+                </a>
+            </footer> 
+        </main>
+    </body>
+</html>
