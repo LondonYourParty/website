@@ -74,8 +74,15 @@
                 font-weight: 200;
                 font-size: 2.5vw;
             }
+            h3 {
+                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
+                font-weight: 200;
+                font-size: 4vh;
+                letter-spacing: 0px;
+                line-height: 1em;        
+            }
             p {
-                font-size: 2em;
+                font-size: 1.5em;
             }
             .nav-button {
                 font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -124,6 +131,11 @@
             #body-item-2 {
                 margin-top: 2.5vh;
                 margin-bottom: 2.5vh;
+                display: flex; 
+                text-align: center; 
+                align-items: center; 
+                width: 100%; 
+                justify-content: center;
             }
             #body-item-3 {
                 margin-top: 2.5vh;
@@ -149,6 +161,20 @@
                 opacity: 50%;
             }
 
+            .subtitle {
+                width: 50%;
+                text-align: center;
+            }
+
+            .red-text {
+                color: #FF3131;
+            }
+            .totals-containers {
+                width: 25%; 
+                line-height: 1.25em; 
+                margin: 0 0.5em;
+            }
+
             @media (min-width: 1071px) {
                 .hidden-on-desktop {
                     display: none;
@@ -170,6 +196,10 @@
                     font-size: 1.25em;
                     line-height: 1.5em;                                 
                 }
+                h3 {
+                    font-size: 1.25em;
+                    line-height: 1.5em; 
+                }
                 p {
                     font-size: 1em;
                 }   
@@ -181,6 +211,7 @@
                 .nav-row {
                     flex-direction: column;
                     justify-content: space-evenly;
+                    margin-top: -4vh;
                 }
                 #body-item-1 {
                     margin-top: 7.5vh;                    
@@ -189,6 +220,7 @@
                 #body-item-2 {
                     margin-top: 1vh;                    
                     margin-bottom: 1vh;
+                    flex-direction: column;
                 }
                 #body-item-3 {
                     margin-top: 1vh;                    
@@ -205,6 +237,14 @@
                     margin-top: 0.1em;
                     margin-bottom: -1.25em;
                 }
+                .subtitle {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+                .totals-container {
+                    margin: 0 0.5em;
+                    text-align: center;
+                }   
             }
         </style>
     </head>
@@ -216,17 +256,41 @@
                     LONDON YOUR PARTY
                 </h1>                
             </header>
-            <section id="body-item-2" class="vertical-align-children">
-                <h2 style="text-align: center;">
+            <section id="body-item-2">
+                <h3 class="totals-container hidden-on-mobile">
+                    <span class="red-text">13 GROUPS</span>
+                    <br/>
+                    ATTENDING SO FAR
+                    <br/>
+                    <br />
+                    <span class="red-text">36 KNOWN</span>
+                    <br/>
+                    GROUPS IN LONDON
+                </h3>
+                <h2 class="subtitle">
                     ALL-LONDON DELEGATE ASSEMBLY
                     <br/>
                     SUN 8 FEB 2026 — 09:30-17:30
                     <br/>
-                    VENUE & TICKETS TBA
-                </h2>
-            </section>        
-            <nav id="body-item-3" class="vertical-align-children">
-                <div class="nav-row">
+                    VENUE & TICKETS TBA                    
+                    <br/>                    
+                </h2>                
+                <h3 class="totals-container hidden-on-mobile">
+                    <span class="red-text">25 DELEGATES</span>
+                    <br/>
+                    ATTENDING SO FAR
+                    <br/>
+                    <br/>
+                    <span class="red-text">172 MEMBERS</span>
+                    <br/>
+                    REPRESENTED SO FAR
+                </h3>
+            </section>   
+            <p class="hidden-on-mobile">
+                TOTALS LAST UPDATED 23 JAN 26
+            </p>     
+            <section id="body-item-3" style="display: flex; flex-direction: column; justify-content: center;">
+                <nav class="nav-row">
                     <a class="nav-button vertical-align-children" href="whoweare" target="_blank" rel="noopener noreferrer">
                         <span class="button-text">WHO WE ARE</span>
                         <span class="button-subtext">
@@ -240,8 +304,20 @@
                     <div class="nav-button vertical-align-children disabled">
                         <span>GROUPS (TBA)</span>
                     </div>
-                </div>           
-            </nav>                   
+                </nav>
+                <h3 class="totals-container hidden-on-desktop" style="margin-top: 4vh;">
+                    <span class="red-text">13 GROUPS</span> ATTENDING SO FAR
+                    <br/>
+                    <span class="red-text">36 KNOWN</span> GROUPS IN LONDON
+                    <br/>
+                    <span class="red-text">25 DELEGATES</span> ATTENDING SO FAR
+                    <br/>
+                    <span class="red-text">172 MEMBERS</span> REPRESENTED SO FAR
+                </h3>    
+                <p class="hidden-on-desktop" style="text-align: center; font-size: 0.75em; margin-top: 3vh; margin-bottom: -3vh;">
+                    TOTALS LAST UPDATED 23 JAN 26
+                </p>  
+            </section>                   
             <footer id="body-item-4" class="vertical-align-children">
                 <p class="vertical-align-children" style="text-align: center;">
                     <a href="mailto:yplondondelegateassembly@gmail.com">yplondondelegateassembly@gmail.com</a>
