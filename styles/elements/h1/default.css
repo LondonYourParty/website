@@ -6,6 +6,9 @@ h1 {
     line-height: 1em;        
 }
 
+h1.yp-title {
+    text-align: center;
+}
 /* MOBILE */
 @media (max-width: 1070px) {
     h1 {

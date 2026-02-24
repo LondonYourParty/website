@@ -10,6 +10,7 @@
 @import "../elements/html/default.css";
 @import "../elements/body/default.css";
 @import "../elements/main/default.css";
+@import "../elements/footer/default.css";
 
 @import "../elements/h1/default.css";
 @import "../elements/h2/default.css";
@@ -19,5 +20,7 @@
 /* COMPONENTS */
 @import "../components/yp-page-triangle.css";
 @import "../components/yp-button.css";
+@import "../components/yp-card.css";
+@import "../components/yp-flex-row.css";
 
 /* PAGE */

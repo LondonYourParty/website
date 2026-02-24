@@ -1,0 +1,44 @@
+.yp-card {
+    flex: 0 1; 
+    margin: 2vh 1.5em; 
+    text-align: center; 
+    width: auto; 
+    background: #FFFFFF; 
+}
+
+.yp-card-triangle {
+    position: relative;
+    width: 0px; 
+    height: 0px;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 3vh 3vh 0 0;
+    border-color: var(--yp-colour-red) transparent transparent transparent;
+    transform: rotate(0deg);                                
+}
+
+.yp-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 36vh;
+    margin-top: -3vh;
+}
+
+.yp-card-title {
+    color: var(--yp-colour-red);
+    font-size: 4vh;
+}
+
+@media (max-width: 1070px) {
+    .yp-card {
+        min-width: 20em;
+        max-width: 20em;
+    }
+
+    .yp-card-container {
+        height: 20em;
+    }
+}
