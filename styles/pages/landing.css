@@ -1,0 +1,26 @@
+/* LANDING PAGE STYLES */
+
+/* GLOBAL */
+@import "../global/colours.css";
+@import "../global/fonts.css";
+@import "../global/media-toggles.css";
+@import "../global/overrides.css";
+
+/* ELEMENTS */
+@import "../elements/html.css";
+@import "../elements/body.css";
+@import "../elements/main.css";
+@import "../elements/footer.css";
+
+@import "../elements/h1.css";
+@import "../elements/h2.css";
+@import "../elements/h3.css";
+@import "../elements/p.css";
+
+/* COMPONENTS */
+@import "../components/yp-page-triangle.css";
+@import "../components/yp-button.css";
+@import "../components/yp-card.css";
+@import "../components/yp-flex-row.css";
+
+/* PAGE */

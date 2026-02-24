@@ -1,0 +1,18 @@
+.yp-page-triangle {
+    position: absolute;
+    width: 0px; 
+    height: 0px;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 200px 200px 0 0;
+    border-color: var(--yp-colour-red) transparent transparent transparent;
+    transform: rotate(0deg);        
+    z-index: -999999        
+}
+
+@media (max-width: 1070px) {
+    .yp-page-triangle {
+        border-width: 25vw 25vw 0 0;
+    }
+}

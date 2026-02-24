@@ -33,80 +33,16 @@
         <link rel="apple-touch-icon" href="https://londonyp.org/assets/imgs/Chevron.png">
         <meta rel="msapplication-TileImage" href="https://londonyp.org/assets/imgs/Chevron.png">
 
+        <link rel="stylesheet" href="styles/pages/landing.css">
+
         <style>
-            @font-face { font-family: OpenSauceSans; src: url('https://londonyp.org/assets/fonts/OpenSauceSans-Regular.ttf'); } 
-            @font-face { font-family: Anton; src: url('https://londonyp.org/assets/fonts/Anton-Regular.ttf') }
-            * {
-                margin: 0;
-            }
-            html {
-                height: 100%;
-            }
-            body {
-                color: #042830;
-                background-color:#FAF6E8;                
-                
-                font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;               
-                line-height: 1.6;
-                font-size: 100%; 
-                word-wrap: break-word;
-                
-                height: 100%;
-                margin: 0; 
-                padding: 0;               
-            }
-            main {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                height: 100%;
-            }
-            h1 {
-                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
-                font-weight: 200;
-                font-size: 10vw;
-                letter-spacing: 0px;
-                line-height: 1em;        
-            }
-            h2 {
-                font-weight: 200;
-                font-size: 2.5vw;
-            }
-            p {
-                font-size: 2em;
-            }
-            .nav-button {
-                font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                background: #042830;
-                color: #FAF6E8;
-                padding: 1em;
-                margin: 0.5em;
-                font-size: 2em;
-                width: fit-content;
-                white-space: nowrap;
-                flex: 1 1 0;
-                text-align: center;
-            }
-            .nav-row {
+            .yp-flex-row {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
                 height: 100%;
                 flex-wrap: wrap;
-            }
-            .red-triangle-one {
-                position: absolute;
-                width: 0px; 
-                height: 0px;
-                top: 0;
-                left: 0;
-                border-style: solid;
-                border-width: 200px 200px 0 0;
-                border-color: #FF3131 transparent transparent transparent;
-                transform: rotate(0deg);        
-                z-index: -999999        
             }
 
             .vertical-align-children {
@@ -133,26 +69,7 @@
             }
 
             @media (max-width: 1070px) {
-               .red-triangle-one {
-                    border-width: 25vw 25vw 0 0;
-                }
-                h1 {
-                    font-size: 3.5em;
-                    line-height: 1em;                                 
-                }
-                h2 {
-                    font-size: 1.25em;
-                    line-height: 1.5em;                                 
-                }
-                p {
-                    font-size: 1em;
-                }   
-                .nav-button {
-                    padding: 0.75em;
-                    font-size: 1.25em;
-                    height: fit-content;
-                }
-                .nav-row {
+                .yp-flex-row {
                     flex-direction: column;
                     justify-content: space-evenly;
                 }
@@ -177,7 +94,7 @@
     </head>
     <body>
         <main>
-            <div class="red-triangle-one"></div>
+            <div class="yp-page-triangle"></div>
             <header id="body-item-1" class="vertical-align-children">
                 <h1 style="text-align: center;">
                     LONDON YOUR PARTY
@@ -193,7 +110,7 @@
             </section>        
             <nav id="body-item-3" class="vertical-align-children">
                 <div>
-                    <a class="nav-button vertical-align-children" href="https://londonyp.org/">HOME</a>
+                    <a class="yp-button yp-button-big vertical-align-children" href="https://londonyp.org/">HOME</a>
                 </div>
             </nav>                   
             <footer id="body-item-4" class="vertical-align-children">

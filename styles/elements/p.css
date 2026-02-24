@@ -1,0 +1,9 @@
+p {
+    font-size: 1.5em;
+}
+
+@media (max-width: 1070px) {
+    p {
+        font-size: 1em;
+    }   
+}

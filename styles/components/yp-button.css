@@ -1,0 +1,120 @@
+/*------------------------------------------------------------------------------------------------*/
+/* BASE */
+/*------------------------------------------------------------------------------------------------*/
+
+.yp-button {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: var(--yp-colour-black);
+    color: var(--yp-colour-white);
+    white-space: nowrap;
+    
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yp-button-disabled {
+    opacity: 50%;
+}
+
+.yp-button-subtext {
+    font-size: 0.33em; 
+    text-align: center;
+    opacity: 50%;
+    font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;    
+    margin-top: 0.33em;
+}
+
+a.yp-button {
+    text-decoration: none;
+}
+
+a.yp-button .yp-button-text {
+    text-decoration: underline;
+}
+
+@media (max-width: 1070px) {
+    .yp-button {
+        height: fit-content;
+        font-size: 1.25em;
+    }
+
+    .yp-button-subtext {
+        font-size: 0.4em;
+    }    
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/* LARGE VARIANT - INDEX, 404 */
+/*------------------------------------------------------------------------------------------------*/
+
+.yp-button.yp-button-big {
+    padding: 1em;
+    margin: 0.5em;
+    font-size: 2em;
+    width: fit-content;
+    flex: 1 1 0;
+}
+
+.yp-button.yp-button-big .yp-button-subtext {
+    margin-bottom: -1.75em;
+}
+
+@media (max-width: 1070px) {
+    .yp-button.yp-button-big {
+        font-size: 1.25em;
+        padding: 0.75em;
+    }
+
+    .yp-button.yp-button-big .yp-button-subtext {
+        margin-top: 0.1em;
+        margin-bottom: -1.25em;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/* SMALL VARIANT - ALDA */
+/*------------------------------------------------------------------------------------------------*/
+
+.yp-button.yp-button-small {
+    padding: 0.5em;
+    margin: 0.25em;
+    font-size: 2.5vh;
+    width: 80%;
+
+    min-width: 10em;
+    max-width: 10em;
+    margin: 0 1em;
+}
+
+.yp-button.yp-button-small .yp-button-subtext {
+    margin-bottom: -0.33em;
+}
+
+.yp-button.yp-button-small .yp-button-text-padded {    
+    margin-top: 0.165em; 
+    margin-bottom: 0.165em;
+    text-decoration: underline;
+}
+
+.yp-button.yp-button-small.yp-button-disabled .yp-button-text-padded {
+    text-decoration: none;
+}
+
+@media (max-width: 1070px) {
+    .yp-button.yp-button-small {
+        font-size: 1.25em;
+        padding: 0.5em;
+    }
+
+    .yp-button.yp-button-small .yp-button-subtext {
+        margin-top: 0.2em;
+        margin-bottom: -0.2em;
+    }
+
+    .yp-button.yp-button-small .yp-button-text-padded {
+        margin-top: 0.2em; 
+        margin-bottom: 0.2em;
+    }
+}

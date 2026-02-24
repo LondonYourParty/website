@@ -1,0 +1,17 @@
+.yp-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 0 1.5em;
+}
+
+@media (max-width: 1070px) {
+    .yp-flex-row {
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;        
+    }
+}

@@ -1,0 +1,18 @@
+h1 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;                
+    font-weight: 200;
+    font-size: 7.5vw;
+    letter-spacing: 0px;
+    line-height: 1em;        
+}
+
+h1.yp-title {
+    text-align: center;
+}
+/* MOBILE */
+@media (max-width: 1070px) {
+    h1 {
+        font-size: 3.5em;
+        line-height: 1em;                                 
+    }
+}

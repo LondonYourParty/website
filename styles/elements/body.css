@@ -1,0 +1,13 @@
+body {
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    
+    color: #042830;
+    background-color:#FAF6E8;
+    
+    font-family: "OpenSauceSans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;               
+    line-height: 1.6;
+    font-size: 100%; 
+    word-wrap: break-word;
+}
