@@ -1,0 +1,23 @@
+/* LANDING PAGE STYLES */
+
+/* GLOBAL */
+@import "../global/colours.css";
+@import "../global/fonts.css";
+@import "../global/media-toggles.css";
+@import "../global/overrides.css";
+
+/* ELEMENTS */
+@import "../elements/html/default.css";
+@import "../elements/body/default.css";
+@import "../elements/main/default.css";
+
+@import "../elements/h1/default.css";
+@import "../elements/h2/default.css";
+@import "../elements/h3/default.css";
+@import "../elements/p/default.css";
+
+/* COMPONENTS */
+@import "../components/yp-page-triangle.css";
+@import "../components/yp-button.css";
+
+/* PAGE */
