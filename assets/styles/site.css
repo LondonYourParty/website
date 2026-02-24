@@ -1,0 +1,10 @@
+@font-face { font-family: OpenSauceSans; src: url('https://londonyp.org/assets/fonts/OpenSauceSans-Regular.ttf'); } 
+@font-face { font-family: Anton; src: url('https://londonyp.org/assets/fonts/Anton-Regular.ttf') }
+
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
