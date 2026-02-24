@@ -7,15 +7,15 @@
 @import "../global/overrides.css";
 
 /* ELEMENTS */
-@import "../elements/html/default.css";
-@import "../elements/body/default.css";
-@import "../elements/main/default.css";
-@import "../elements/footer/default.css";
+@import "../elements/html.css";
+@import "../elements/body.css";
+@import "../elements/main.css";
+@import "../elements/footer.css";
 
-@import "../elements/h1/default.css";
-@import "../elements/h2/default.css";
-@import "../elements/h3/default.css";
-@import "../elements/p/default.css";
+@import "../elements/h1.css";
+@import "../elements/h2.css";
+@import "../elements/h3.css";
+@import "../elements/p.css";
 
 /* COMPONENTS */
 @import "../components/yp-page-triangle.css";
