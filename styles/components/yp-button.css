@@ -30,7 +30,7 @@ a.yp-button {
     text-decoration: none;
 }
 
-a.yp-button .yp-button-text {
+a.yp-button .yp-button-text, a.yp-button .yp-button-text-padded {
     text-decoration: underline;
 }
 
